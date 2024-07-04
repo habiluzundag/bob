@@ -37,6 +37,7 @@ body {
 
 .sidebar ul li a:hover {
     background-color: #575757;
+    border-radius: 5px;
 }
 
 .main-content {
@@ -56,6 +57,7 @@ body {
 .tabs :hover {
     background-color: #000000;
     color: #ffffff;
+    border-radius: 5px;
 }
 
 .tab-button {
@@ -68,7 +70,7 @@ body {
     text-align: center;
 }
 
-.tab-button.active {
+.tab-button active {
     background-color: #da1616;
 }
 
@@ -88,11 +90,14 @@ body {
 .grid-item img {
     width: 100%;
     height: auto;
-    transition: transform 0.3s ease;
+    transition: transform 0.6s ease;
+    border-radius: 75px;
+    border: 2px solid tomato;
 }
 
 .grid-item:hover img {
     transform: scale(1.1);
+    border-radius: 10px;
 }
 
 /* Media Queries for Mobile Responsiveness */
