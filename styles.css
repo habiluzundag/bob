@@ -1,5 +1,6 @@
 body {
     display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -62,8 +63,9 @@ body {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    flex: 1;
-    
+    flex-grow: 1;
+    flex-basis: 150px;
+    text-align: center;
 }
 
 .tab-button.active {
@@ -71,9 +73,7 @@ body {
 }
 
 .gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
     background-color: aqua;
@@ -86,11 +86,48 @@ body {
 }
 
 .grid-item img {
-    width: 150px;
+    width: 100%;
     height: auto;
     transition: transform 0.3s ease;
 }
 
 .grid-item:hover img {
-    transform: scale(1.1);
+    transform: scale(0.5);
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .tabs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .tab-button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .tabs {
+        padding: 5px 0;
+    }
+
+    .tab-button {
+        padding: 8px 10px;
+    }
 }
