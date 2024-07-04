@@ -75,10 +75,14 @@ body {
 }
 
 .gallery {
-    display: grid;
+    
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
+    gap: 12px;
+    padding-left: 20px;
     background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 .grid-item {
