@@ -75,14 +75,14 @@ body {
 }
 
 .gallery {
-    
+    width: 60%;
+    margin:auto;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 12px;
-    padding-left: 20px;
+    gap: 10px;
     background-color: aqua;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 .grid-item {
@@ -100,7 +100,8 @@ body {
 }
 
 .grid-item:hover img {
-    transform: scale(1.1);
+   
+    transform: scale(1.1) perspective(150px) rotateX(5deg)rotateY(10deg);
     border-radius: 10px;
 }
 
