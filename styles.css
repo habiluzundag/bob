@@ -140,6 +140,19 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+.egg{
+
+    width: 50%;
+    display: flex;
+    margin: auto;
+    margin-left: 25%;
+    float: left;
+    
+    align-items: center;
+}
+.egg button{
+    width: 20%;
+}
 
 
 /* Media Queries for Mobile Responsiveness */
