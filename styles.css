@@ -153,9 +153,14 @@ styles.css
 .egg button{
     width: 20%;
 }
-.erdem{
-    margin:auto;
+.erdem {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+.erdem_img {
+    display: block;
+    margin-bottom: 20px;
 }
 
 /* Media Queries for Mobile Responsiveness */
