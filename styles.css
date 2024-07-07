@@ -121,7 +121,7 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
+styles.css
 .dropdown-content a {
     background-color: #f1f1f1;
     color: #da1616;
@@ -147,13 +147,16 @@ body {
     margin: auto;
     margin-left: 25%;
     float: left;
-    
+    justify-content: center;
     align-items: center;
 }
 .egg button{
     width: 20%;
 }
-
+.erdem{
+    margin:auto;
+    align-items: center;
+}
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
@@ -180,6 +183,14 @@ body {
     .gallery {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
+    .egg{
+        float: none;
+        justify-content: center;
+        
+    }
+    .egg button{
+        margin: auto;
+    } 
 }
 
 @media (max-width: 480px) {
